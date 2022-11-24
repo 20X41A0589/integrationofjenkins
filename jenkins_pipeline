@@ -1,16 +1,23 @@
 Pipeline{
-Agent any{
+     agent any
 Stages{
-Stage('check validate'){
+Stage('check validate')
+steps{
 Echo'i am vallidating'
 }
-Stage('compile'){
+}
+Stage('compile')
+steps{
 Echo'i am compiling'
 }
-Stage('test'){
+}
+Stage('test')
+steps{
 Echo'i am testing'
 }
-Stage('install'){
+}
+Stage('install')
+steps{
 Echo'i am installing'
 }
 }
