@@ -1,0 +1,18 @@
+Pipeline{
+Agent any{
+Stages{
+Stage('check validate'){
+Echo'i am vallidating'
+}
+Stage('compile'){
+Echo'i am compiling'
+}
+Stage('test'){
+Echo'i am testing'
+}
+Stage('install'){
+Echo'i am installing'
+}
+}
+}
+}
