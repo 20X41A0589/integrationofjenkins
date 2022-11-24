@@ -1,25 +1,24 @@
-Pipeline{
-     agent any
-Stages{
-Stage('check validate')
-steps{
-Echo'i am vallidating'
+pipeline {
+    agent any
+
+    stages {
+        stage('validate') {
+            steps {
+                echo 'vadilating'
 }
 }
-Stage('compile')
-steps{
-Echo'i am compiling'
+
+    
+	stage('compile'){
+	steps{
+	echo'compiling'
 }
 }
-Stage('test')
-steps{
-Echo'i am testing'
-}
-}
-Stage('install')
-steps{
-Echo'i am installing'
-}
-}
-}
+
+	stage('install'){
+	steps{
+	echo'installing'	
+            }
+        }
+    }
 }
